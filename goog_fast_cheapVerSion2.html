@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<style>
+    input {
+        width: 30px
+    }
+</style>
+
+<body>
+<table>
+    <tr>
+        <td> Good</td>
+        <td><input type="checkbox" id="Good" onclick="ServiceQuality(event)"></td>
+    </tr>
+    <tr>
+        <td> Fast</td>
+        <td><input type="checkbox" id="Fast" onclick="ServiceQuality(event)"></td>
+    </tr>
+    <tr>
+        <td> Cheap</td>
+        <td><input type="checkbox" id="Cheap" onclick="ServiceQuality(event)"></td>
+    </tr>
+</table>
+</body>
+<script>
+    function ServiceQuality(event) {
+        let id1 = document.getElementById("Good").checked;
+        let id2 = document.getElementById("Fast").checked;
+        let id3 = document.getElementById("Cheap").checked;
+        if (event.target.id === "Good") {
+            if (id1 === true && id2 === true && id3 === true)
+                document.getElementById("Fast").checked = false;
+        } else if (event.target.id === "Fast") {
+            if (id1 === true && id2 === true && id3 === true)
+                document.getElementById("Cheap").checked = false;
+        } else if (event.target.id === "Cheap") {
+            if (id1 === true && id2 === true && id3 === true)
+                document.getElementById("Good").checked = false;
+        }
+    }
+</script>
+</html>
