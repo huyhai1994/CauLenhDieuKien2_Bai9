@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x,y,z, trungbinh;
+    alert("Nhap ba diem (diem kiem tra, diem giua ky va diem cuoi ky) tuong ung la:");
+    x = +prompt("Điểm kiểm tra: ");
+    y = +prompt("Điểm giữa kỳ: ");
+    z = +prompt("Điểm cuối kỳ: ");
+    trungbinh=(x+y+z)/3;
+    if(trungbinh>=9.0)
+        alert("Hang A");
+    else if((trungbinh>=7.0) && (trungbinh<90))
+        alert("Hang B");
+    else if((trungbinh>=5.0) && (trungbinh<70))
+        alert("Hang C");
+    else if(trungbinh<5.0)
+        alert("Hang F");
+    else
+        alert("Khong hop le");
+</script>
+</body>
+</html>

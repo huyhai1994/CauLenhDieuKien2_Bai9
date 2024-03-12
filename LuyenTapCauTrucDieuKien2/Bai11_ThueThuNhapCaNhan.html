@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let thuesuat;
+    let luong,sothue,luongrong=0;
+    luong = +prompt( "Nhap so tien luong : ");
+    if(luong>15)
+    {
+        sothue=luong*30/100;
+        thuesuat=30;
+    }
+    else if(luong>=7)
+    {
+        sothue=luong*20/100;
+        thuesuat=20;
+    }
+    else
+    {
+        sothue=luong*10/100;
+        thuesuat=10;
+    }
+    luongrong=luong-sothue;
+    alert( "Luong = " + luong );
+    alert( "Thue thu nhap voi muc thue suat " + thuesuat );
+    alert( "So tien luong ban nhan la = " + luongrong );
+</script>
+</body>
+</html>

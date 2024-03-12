@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div {
+        margin: 20% 50%;
+        /*Cách trái phải 20% và 50% */
+        width: 20%
+    }
+</style>
+<body>
+<div>
+    <h1>Do you hate me?</h1>
+    <button onmouseover="yes()" style="position:relative" id="yes"> YES</button>
+    <!--   style="position:relative"  : Cách bắt ra khỏi thẻ HTML khác để dịch chuyển đi được-->
+    <button onclick="no()"  id="no"> NO</button>
+</div>
+
+<script>
+    function yes() {
+        //     Cầm phần tử đó ra
+        document.getElementById('yes').style.top = Math.random() * window.innerHeight + "px"; // random tra ve 0-0.99
+        document.getElementById('yes').style.left = Math.random() * window.innerWidth + "px"; // random tra ve 0-0.99
+    }
+    function no (){
+        alert("No hate")
+    }
+</script>
+</body>
+</html>

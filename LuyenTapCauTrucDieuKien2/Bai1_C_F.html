@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhietdoc, nhietdof;
+    alert("1. Chuyen doi tu do C sang do F");
+    alert("2. Chuyen doi tu do F sang do C");
+    alert("Ban chon giua 1 va 2 : ");
+    let luachon = +prompt("Nhập lựa chọn [1 or 2]: ");
+    if (luachon === 1) {
+        nhietdoc = +prompt( "Nhap do C : ");
+        nhietdof = (1.8 * nhietdoc) + 32;
+        alert("Do F tuong ung = "+nhietdof);
+    } else {
+        nhietdof = prompt( "Nhap do F : ");
+        nhietdoc = (nhietdof - 32) / 1.8;
+        alert("Do C tuong ung = " +nhietdoc);
+    }
+</script>
+</body>
+</html>
